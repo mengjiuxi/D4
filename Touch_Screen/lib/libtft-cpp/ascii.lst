@@ -1,0 +1,908 @@
+GAS LISTING /tmp/ccdCrIyi.s 			page 1
+
+
+   1               		.file	"ascii.c"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.stabs	"/home/clark/Documents/Clark/Touch_Screen/lib/libtft-cpp/",100,0,2,.Ltext0
+   8               		.stabs	"ascii.c",100,0,2,.Ltext0
+   9               		.text
+  10               	.Ltext0:
+  11               		.stabs	"gcc2_compiled.",60,0,0,0
+  12               		.stabs	"int:t(0,1)=r(0,1);-32768;32767;",128,0,0,0
+  13               		.stabs	"char:t(0,2)=r(0,2);0;127;",128,0,0,0
+  14               		.stabs	"long int:t(0,3)=@s32;r(0,3);020000000000;017777777777;",128,0,0,0
+  15               		.stabs	"unsigned int:t(0,4)=r(0,4);0;0177777;",128,0,0,0
+  16               		.stabs	"long unsigned int:t(0,5)=@s32;r(0,5);0;037777777777;",128,0,0,0
+  17               		.stabs	"long long int:t(0,6)=@s64;r(0,6);01000000000000000000000;0777777777777777777777;",128,0,0,
+  18               		.stabs	"long long unsigned int:t(0,7)=@s64;r(0,7);0;01777777777777777777777;",128,0,0,0
+  19               		.stabs	"short int:t(0,8)=r(0,8);-32768;32767;",128,0,0,0
+  20               		.stabs	"short unsigned int:t(0,9)=r(0,9);0;0177777;",128,0,0,0
+  21               		.stabs	"signed char:t(0,10)=@s8;r(0,10);-128;127;",128,0,0,0
+  22               		.stabs	"unsigned char:t(0,11)=@s8;r(0,11);0;255;",128,0,0,0
+  23               		.stabs	"float:t(0,12)=r(0,1);4;0;",128,0,0,0
+  24               		.stabs	"double:t(0,13)=r(0,1);4;0;",128,0,0,0
+  25               		.stabs	"long double:t(0,14)=r(0,1);4;0;",128,0,0,0
+  26               		.stabs	"void:t(0,15)=(0,15)",128,0,0,0
+  27               		.stabs	"/usr/lib/gcc/avr/4.7.2/../../../avr/include/avr/pgmspace.h",130,0,0,0
+  28               		.stabs	"/usr/lib/gcc/avr/4.7.2/../../../avr/include/inttypes.h",130,0,0,0
+  29               		.stabs	"/usr/lib/gcc/avr/4.7.2/include/stdint.h",130,0,0,0
+  30               		.stabs	"/usr/lib/gcc/avr/4.7.2/../../../avr/include/stdint.h",130,0,0,0
+  31               		.stabs	"int8_t:t(4,1)=(0,10)",128,0,121,0
+  32               		.stabs	"uint8_t:t(4,2)=(0,11)",128,0,122,0
+  33               		.stabs	"int16_t:t(4,3)=(0,1)",128,0,123,0
+  34               		.stabs	"uint16_t:t(4,4)=(0,4)",128,0,124,0
+  35               		.stabs	"int32_t:t(4,5)=(0,3)",128,0,125,0
+  36               		.stabs	"uint32_t:t(4,6)=(0,5)",128,0,126,0
+  37               		.stabs	"int64_t:t(4,7)=(0,6)",128,0,128,0
+  38               		.stabs	"uint64_t:t(4,8)=(0,7)",128,0,129,0
+  39               		.stabs	"intptr_t:t(4,9)=(4,3)",128,0,142,0
+  40               		.stabs	"uintptr_t:t(4,10)=(4,4)",128,0,147,0
+  41               		.stabs	"int_least8_t:t(4,11)=(4,1)",128,0,159,0
+  42               		.stabs	"uint_least8_t:t(4,12)=(4,2)",128,0,164,0
+  43               		.stabs	"int_least16_t:t(4,13)=(4,3)",128,0,169,0
+  44               		.stabs	"uint_least16_t:t(4,14)=(4,4)",128,0,174,0
+  45               		.stabs	"int_least32_t:t(4,15)=(4,5)",128,0,179,0
+  46               		.stabs	"uint_least32_t:t(4,16)=(4,6)",128,0,184,0
+  47               		.stabs	"int_least64_t:t(4,17)=(4,7)",128,0,192,0
+  48               		.stabs	"uint_least64_t:t(4,18)=(4,8)",128,0,199,0
+  49               		.stabs	"int_fast8_t:t(4,19)=(4,1)",128,0,213,0
+  50               		.stabs	"uint_fast8_t:t(4,20)=(4,2)",128,0,218,0
+  51               		.stabs	"int_fast16_t:t(4,21)=(4,3)",128,0,223,0
+  52               		.stabs	"uint_fast16_t:t(4,22)=(4,4)",128,0,228,0
+  53               		.stabs	"int_fast32_t:t(4,23)=(4,5)",128,0,233,0
+  54               		.stabs	"uint_fast32_t:t(4,24)=(4,6)",128,0,238,0
+  55               		.stabs	"int_fast64_t:t(4,25)=(4,7)",128,0,246,0
+  56               		.stabs	"uint_fast64_t:t(4,26)=(4,8)",128,0,253,0
+  57               		.stabs	"intmax_t:t(4,27)=(4,7)",128,0,273,0
+GAS LISTING /tmp/ccdCrIyi.s 			page 2
+
+
+  58               		.stabs	"uintmax_t:t(4,28)=(4,8)",128,0,278,0
+  59               		.stabn	162,0,0,0
+  60               		.stabn	162,0,0,0
+  61               		.stabs	"int_farptr_t:t(2,1)=(4,5)",128,0,77,0
+  62               		.stabs	"uint_farptr_t:t(2,2)=(4,6)",128,0,81,0
+  63               		.stabn	162,0,0,0
+  64               		.stabs	"/usr/lib/gcc/avr/4.7.2/include/stddef.h",130,0,0,0
+  65               		.stabs	"size_t:t(5,1)=(0,4)",128,0,213,0
+  66               		.stabn	162,0,0,0
+  67               		.stabs	"/usr/lib/gcc/avr/4.7.2/../../../avr/include/avr/io.h",130,0,0,0
+  68               		.stabs	"/usr/lib/gcc/avr/4.7.2/../../../avr/include/avr/fuse.h",130,0,0,0
+  69               		.stabs	"__fuse_t:t(7,1)=(7,2)=s3low:(0,11),0,8;high:(0,11),8,8;extended:(0,11),16,8;;",128,0,244,0
+  70               		.stabn	162,0,0,0
+  71               		.stabn	162,0,0,0
+  72               		.stabn	162,0,0,0
+  73               	.global	ascii
+  74               		.section	.progmem.data,"a",@progbits
+  75               		.type	ascii, @object
+  76               		.size	ascii, 768
+  77               	ascii:
+  78 0000 02        		.byte	2
+  79 0001 00        		.byte	0
+  80 0002 00        		.byte	0
+  81 0003 00        		.byte	0
+  82 0004 00        		.byte	0
+  83 0005 00        		.byte	0
+  84 0006 00        		.byte	0
+  85 0007 01        		.byte	1
+  86 0008 22        		.byte	34
+  87 0009 20        		.byte	32
+  88 000a 20        		.byte	32
+  89 000b 20        		.byte	32
+  90 000c 00        		.byte	0
+  91 000d 00        		.byte	0
+  92 000e 20        		.byte	32
+  93 000f 01        		.byte	1
+  94 0010 52        		.byte	82
+  95 0011 50        		.byte	80
+  96 0012 50        		.byte	80
+  97 0013 00        		.byte	0
+  98 0014 00        		.byte	0
+  99 0015 00        		.byte	0
+ 100 0016 00        		.byte	0
+ 101 0017 01        		.byte	1
+ 102 0018 52        		.byte	82
+ 103 0019 50        		.byte	80
+ 104 001a F8        		.byte	-8
+ 105 001b 50        		.byte	80
+ 106 001c F8        		.byte	-8
+ 107 001d 50        		.byte	80
+ 108 001e 50        		.byte	80
+ 109 001f 01        		.byte	1
+ 110 0020 22        		.byte	34
+ 111 0021 78        		.byte	120
+ 112 0022 A0        		.byte	-96
+ 113 0023 70        		.byte	112
+ 114 0024 28        		.byte	40
+GAS LISTING /tmp/ccdCrIyi.s 			page 3
+
+
+ 115 0025 F0        		.byte	-16
+ 116 0026 20        		.byte	32
+ 117 0027 01        		.byte	1
+ 118 0028 C2        		.byte	-62
+ 119 0029 C8        		.byte	-56
+ 120 002a 10        		.byte	16
+ 121 002b 20        		.byte	32
+ 122 002c 40        		.byte	64
+ 123 002d 98        		.byte	-104
+ 124 002e 18        		.byte	24
+ 125 002f 01        		.byte	1
+ 126 0030 62        		.byte	98
+ 127 0031 90        		.byte	-112
+ 128 0032 A0        		.byte	-96
+ 129 0033 40        		.byte	64
+ 130 0034 A8        		.byte	-88
+ 131 0035 90        		.byte	-112
+ 132 0036 68        		.byte	104
+ 133 0037 01        		.byte	1
+ 134 0038 62        		.byte	98
+ 135 0039 20        		.byte	32
+ 136 003a 40        		.byte	64
+ 137 003b 00        		.byte	0
+ 138 003c 00        		.byte	0
+ 139 003d 00        		.byte	0
+ 140 003e 00        		.byte	0
+ 141 003f 01        		.byte	1
+ 142 0040 12        		.byte	18
+ 143 0041 20        		.byte	32
+ 144 0042 40        		.byte	64
+ 145 0043 40        		.byte	64
+ 146 0044 40        		.byte	64
+ 147 0045 20        		.byte	32
+ 148 0046 10        		.byte	16
+ 149 0047 01        		.byte	1
+ 150 0048 42        		.byte	66
+ 151 0049 20        		.byte	32
+ 152 004a 10        		.byte	16
+ 153 004b 10        		.byte	16
+ 154 004c 10        		.byte	16
+ 155 004d 20        		.byte	32
+ 156 004e 40        		.byte	64
+ 157 004f 01        		.byte	1
+ 158 0050 02        		.byte	2
+ 159 0051 20        		.byte	32
+ 160 0052 A8        		.byte	-88
+ 161 0053 70        		.byte	112
+ 162 0054 A8        		.byte	-88
+ 163 0055 20        		.byte	32
+ 164 0056 00        		.byte	0
+ 165 0057 01        		.byte	1
+ 166 0058 02        		.byte	2
+ 167 0059 20        		.byte	32
+ 168 005a 20        		.byte	32
+ 169 005b F8        		.byte	-8
+ 170 005c 20        		.byte	32
+ 171 005d 20        		.byte	32
+GAS LISTING /tmp/ccdCrIyi.s 			page 4
+
+
+ 172 005e 00        		.byte	0
+ 173 005f 01        		.byte	1
+ 174 0060 02        		.byte	2
+ 175 0061 00        		.byte	0
+ 176 0062 00        		.byte	0
+ 177 0063 00        		.byte	0
+ 178 0064 00        		.byte	0
+ 179 0065 60        		.byte	96
+ 180 0066 20        		.byte	32
+ 181 0067 41        		.byte	65
+ 182 0068 02        		.byte	2
+ 183 0069 00        		.byte	0
+ 184 006a 00        		.byte	0
+ 185 006b F8        		.byte	-8
+ 186 006c 00        		.byte	0
+ 187 006d 00        		.byte	0
+ 188 006e 00        		.byte	0
+ 189 006f 01        		.byte	1
+ 190 0070 02        		.byte	2
+ 191 0071 00        		.byte	0
+ 192 0072 00        		.byte	0
+ 193 0073 00        		.byte	0
+ 194 0074 00        		.byte	0
+ 195 0075 60        		.byte	96
+ 196 0076 60        		.byte	96
+ 197 0077 01        		.byte	1
+ 198 0078 02        		.byte	2
+ 199 0079 08        		.byte	8
+ 200 007a 10        		.byte	16
+ 201 007b 20        		.byte	32
+ 202 007c 40        		.byte	64
+ 203 007d 80        		.byte	-128
+ 204 007e 00        		.byte	0
+ 205 007f 01        		.byte	1
+ 206 0080 72        		.byte	114
+ 207 0081 88        		.byte	-120
+ 208 0082 98        		.byte	-104
+ 209 0083 A8        		.byte	-88
+ 210 0084 C8        		.byte	-56
+ 211 0085 88        		.byte	-120
+ 212 0086 70        		.byte	112
+ 213 0087 01        		.byte	1
+ 214 0088 22        		.byte	34
+ 215 0089 60        		.byte	96
+ 216 008a 20        		.byte	32
+ 217 008b 20        		.byte	32
+ 218 008c 20        		.byte	32
+ 219 008d 20        		.byte	32
+ 220 008e 70        		.byte	112
+ 221 008f 01        		.byte	1
+ 222 0090 72        		.byte	114
+ 223 0091 88        		.byte	-120
+ 224 0092 08        		.byte	8
+ 225 0093 10        		.byte	16
+ 226 0094 20        		.byte	32
+ 227 0095 40        		.byte	64
+ 228 0096 F8        		.byte	-8
+GAS LISTING /tmp/ccdCrIyi.s 			page 5
+
+
+ 229 0097 01        		.byte	1
+ 230 0098 FA        		.byte	-6
+ 231 0099 10        		.byte	16
+ 232 009a 20        		.byte	32
+ 233 009b 10        		.byte	16
+ 234 009c 08        		.byte	8
+ 235 009d 88        		.byte	-120
+ 236 009e 70        		.byte	112
+ 237 009f 01        		.byte	1
+ 238 00a0 12        		.byte	18
+ 239 00a1 30        		.byte	48
+ 240 00a2 50        		.byte	80
+ 241 00a3 90        		.byte	-112
+ 242 00a4 F8        		.byte	-8
+ 243 00a5 10        		.byte	16
+ 244 00a6 10        		.byte	16
+ 245 00a7 01        		.byte	1
+ 246 00a8 FA        		.byte	-6
+ 247 00a9 80        		.byte	-128
+ 248 00aa F0        		.byte	-16
+ 249 00ab 08        		.byte	8
+ 250 00ac 08        		.byte	8
+ 251 00ad 88        		.byte	-120
+ 252 00ae 70        		.byte	112
+ 253 00af 01        		.byte	1
+ 254 00b0 32        		.byte	50
+ 255 00b1 40        		.byte	64
+ 256 00b2 80        		.byte	-128
+ 257 00b3 F0        		.byte	-16
+ 258 00b4 88        		.byte	-120
+ 259 00b5 88        		.byte	-120
+ 260 00b6 70        		.byte	112
+ 261 00b7 01        		.byte	1
+ 262 00b8 FA        		.byte	-6
+ 263 00b9 08        		.byte	8
+ 264 00ba 10        		.byte	16
+ 265 00bb 20        		.byte	32
+ 266 00bc 40        		.byte	64
+ 267 00bd 40        		.byte	64
+ 268 00be 40        		.byte	64
+ 269 00bf 01        		.byte	1
+ 270 00c0 72        		.byte	114
+ 271 00c1 88        		.byte	-120
+ 272 00c2 88        		.byte	-120
+ 273 00c3 70        		.byte	112
+ 274 00c4 88        		.byte	-120
+ 275 00c5 88        		.byte	-120
+ 276 00c6 70        		.byte	112
+ 277 00c7 01        		.byte	1
+ 278 00c8 72        		.byte	114
+ 279 00c9 88        		.byte	-120
+ 280 00ca 88        		.byte	-120
+ 281 00cb 78        		.byte	120
+ 282 00cc 08        		.byte	8
+ 283 00cd 10        		.byte	16
+ 284 00ce 60        		.byte	96
+ 285 00cf 01        		.byte	1
+GAS LISTING /tmp/ccdCrIyi.s 			page 6
+
+
+ 286 00d0 02        		.byte	2
+ 287 00d1 60        		.byte	96
+ 288 00d2 60        		.byte	96
+ 289 00d3 00        		.byte	0
+ 290 00d4 60        		.byte	96
+ 291 00d5 60        		.byte	96
+ 292 00d6 00        		.byte	0
+ 293 00d7 01        		.byte	1
+ 294 00d8 02        		.byte	2
+ 295 00d9 60        		.byte	96
+ 296 00da 60        		.byte	96
+ 297 00db 00        		.byte	0
+ 298 00dc 60        		.byte	96
+ 299 00dd 20        		.byte	32
+ 300 00de 40        		.byte	64
+ 301 00df 01        		.byte	1
+ 302 00e0 12        		.byte	18
+ 303 00e1 20        		.byte	32
+ 304 00e2 40        		.byte	64
+ 305 00e3 80        		.byte	-128
+ 306 00e4 40        		.byte	64
+ 307 00e5 20        		.byte	32
+ 308 00e6 10        		.byte	16
+ 309 00e7 01        		.byte	1
+ 310 00e8 02        		.byte	2
+ 311 00e9 00        		.byte	0
+ 312 00ea F8        		.byte	-8
+ 313 00eb 00        		.byte	0
+ 314 00ec F8        		.byte	-8
+ 315 00ed 00        		.byte	0
+ 316 00ee 00        		.byte	0
+ 317 00ef 01        		.byte	1
+ 318 00f0 42        		.byte	66
+ 319 00f1 20        		.byte	32
+ 320 00f2 10        		.byte	16
+ 321 00f3 08        		.byte	8
+ 322 00f4 10        		.byte	16
+ 323 00f5 20        		.byte	32
+ 324 00f6 40        		.byte	64
+ 325 00f7 01        		.byte	1
+ 326 00f8 72        		.byte	114
+ 327 00f9 88        		.byte	-120
+ 328 00fa 08        		.byte	8
+ 329 00fb 10        		.byte	16
+ 330 00fc 20        		.byte	32
+ 331 00fd 00        		.byte	0
+ 332 00fe 20        		.byte	32
+ 333 00ff 01        		.byte	1
+ 334 0100 72        		.byte	114
+ 335 0101 88        		.byte	-120
+ 336 0102 08        		.byte	8
+ 337 0103 68        		.byte	104
+ 338 0104 A8        		.byte	-88
+ 339 0105 A8        		.byte	-88
+ 340 0106 70        		.byte	112
+ 341 0107 01        		.byte	1
+ 342 0108 72        		.byte	114
+GAS LISTING /tmp/ccdCrIyi.s 			page 7
+
+
+ 343 0109 88        		.byte	-120
+ 344 010a 88        		.byte	-120
+ 345 010b 88        		.byte	-120
+ 346 010c F8        		.byte	-8
+ 347 010d 88        		.byte	-120
+ 348 010e 88        		.byte	-120
+ 349 010f 01        		.byte	1
+ 350 0110 F2        		.byte	-14
+ 351 0111 88        		.byte	-120
+ 352 0112 88        		.byte	-120
+ 353 0113 F0        		.byte	-16
+ 354 0114 88        		.byte	-120
+ 355 0115 88        		.byte	-120
+ 356 0116 F0        		.byte	-16
+ 357 0117 01        		.byte	1
+ 358 0118 72        		.byte	114
+ 359 0119 88        		.byte	-120
+ 360 011a 80        		.byte	-128
+ 361 011b 80        		.byte	-128
+ 362 011c 80        		.byte	-128
+ 363 011d 88        		.byte	-120
+ 364 011e 70        		.byte	112
+ 365 011f 01        		.byte	1
+ 366 0120 E2        		.byte	-30
+ 367 0121 90        		.byte	-112
+ 368 0122 88        		.byte	-120
+ 369 0123 88        		.byte	-120
+ 370 0124 88        		.byte	-120
+ 371 0125 90        		.byte	-112
+ 372 0126 E0        		.byte	-32
+ 373 0127 01        		.byte	1
+ 374 0128 FA        		.byte	-6
+ 375 0129 80        		.byte	-128
+ 376 012a 80        		.byte	-128
+ 377 012b F0        		.byte	-16
+ 378 012c 80        		.byte	-128
+ 379 012d 80        		.byte	-128
+ 380 012e F8        		.byte	-8
+ 381 012f 01        		.byte	1
+ 382 0130 FA        		.byte	-6
+ 383 0131 80        		.byte	-128
+ 384 0132 80        		.byte	-128
+ 385 0133 F0        		.byte	-16
+ 386 0134 80        		.byte	-128
+ 387 0135 80        		.byte	-128
+ 388 0136 80        		.byte	-128
+ 389 0137 01        		.byte	1
+ 390 0138 72        		.byte	114
+ 391 0139 88        		.byte	-120
+ 392 013a 80        		.byte	-128
+ 393 013b B8        		.byte	-72
+ 394 013c 88        		.byte	-120
+ 395 013d 88        		.byte	-120
+ 396 013e 78        		.byte	120
+ 397 013f 01        		.byte	1
+ 398 0140 8A        		.byte	-118
+ 399 0141 88        		.byte	-120
+GAS LISTING /tmp/ccdCrIyi.s 			page 8
+
+
+ 400 0142 88        		.byte	-120
+ 401 0143 F8        		.byte	-8
+ 402 0144 88        		.byte	-120
+ 403 0145 88        		.byte	-120
+ 404 0146 88        		.byte	-120
+ 405 0147 01        		.byte	1
+ 406 0148 72        		.byte	114
+ 407 0149 20        		.byte	32
+ 408 014a 20        		.byte	32
+ 409 014b 20        		.byte	32
+ 410 014c 20        		.byte	32
+ 411 014d 20        		.byte	32
+ 412 014e 70        		.byte	112
+ 413 014f 01        		.byte	1
+ 414 0150 3A        		.byte	58
+ 415 0151 10        		.byte	16
+ 416 0152 10        		.byte	16
+ 417 0153 10        		.byte	16
+ 418 0154 10        		.byte	16
+ 419 0155 90        		.byte	-112
+ 420 0156 60        		.byte	96
+ 421 0157 01        		.byte	1
+ 422 0158 8A        		.byte	-118
+ 423 0159 90        		.byte	-112
+ 424 015a A0        		.byte	-96
+ 425 015b C0        		.byte	-64
+ 426 015c A0        		.byte	-96
+ 427 015d 90        		.byte	-112
+ 428 015e 88        		.byte	-120
+ 429 015f 01        		.byte	1
+ 430 0160 82        		.byte	-126
+ 431 0161 80        		.byte	-128
+ 432 0162 80        		.byte	-128
+ 433 0163 80        		.byte	-128
+ 434 0164 80        		.byte	-128
+ 435 0165 80        		.byte	-128
+ 436 0166 F8        		.byte	-8
+ 437 0167 01        		.byte	1
+ 438 0168 8A        		.byte	-118
+ 439 0169 D8        		.byte	-40
+ 440 016a A8        		.byte	-88
+ 441 016b A8        		.byte	-88
+ 442 016c 88        		.byte	-120
+ 443 016d 88        		.byte	-120
+ 444 016e 88        		.byte	-120
+ 445 016f 01        		.byte	1
+ 446 0170 8A        		.byte	-118
+ 447 0171 88        		.byte	-120
+ 448 0172 C8        		.byte	-56
+ 449 0173 A8        		.byte	-88
+ 450 0174 98        		.byte	-104
+ 451 0175 88        		.byte	-120
+ 452 0176 88        		.byte	-120
+ 453 0177 01        		.byte	1
+ 454 0178 72        		.byte	114
+ 455 0179 88        		.byte	-120
+ 456 017a 88        		.byte	-120
+GAS LISTING /tmp/ccdCrIyi.s 			page 9
+
+
+ 457 017b 88        		.byte	-120
+ 458 017c 88        		.byte	-120
+ 459 017d 88        		.byte	-120
+ 460 017e 70        		.byte	112
+ 461 017f 01        		.byte	1
+ 462 0180 F2        		.byte	-14
+ 463 0181 88        		.byte	-120
+ 464 0182 88        		.byte	-120
+ 465 0183 F0        		.byte	-16
+ 466 0184 80        		.byte	-128
+ 467 0185 80        		.byte	-128
+ 468 0186 80        		.byte	-128
+ 469 0187 01        		.byte	1
+ 470 0188 72        		.byte	114
+ 471 0189 88        		.byte	-120
+ 472 018a 88        		.byte	-120
+ 473 018b 88        		.byte	-120
+ 474 018c A8        		.byte	-88
+ 475 018d 90        		.byte	-112
+ 476 018e 68        		.byte	104
+ 477 018f 01        		.byte	1
+ 478 0190 F2        		.byte	-14
+ 479 0191 88        		.byte	-120
+ 480 0192 88        		.byte	-120
+ 481 0193 F0        		.byte	-16
+ 482 0194 A0        		.byte	-96
+ 483 0195 90        		.byte	-112
+ 484 0196 88        		.byte	-120
+ 485 0197 01        		.byte	1
+ 486 0198 7A        		.byte	122
+ 487 0199 80        		.byte	-128
+ 488 019a 80        		.byte	-128
+ 489 019b 70        		.byte	112
+ 490 019c 08        		.byte	8
+ 491 019d 08        		.byte	8
+ 492 019e F0        		.byte	-16
+ 493 019f 01        		.byte	1
+ 494 01a0 FA        		.byte	-6
+ 495 01a1 20        		.byte	32
+ 496 01a2 20        		.byte	32
+ 497 01a3 20        		.byte	32
+ 498 01a4 20        		.byte	32
+ 499 01a5 20        		.byte	32
+ 500 01a6 20        		.byte	32
+ 501 01a7 01        		.byte	1
+ 502 01a8 8A        		.byte	-118
+ 503 01a9 88        		.byte	-120
+ 504 01aa 88        		.byte	-120
+ 505 01ab 88        		.byte	-120
+ 506 01ac 88        		.byte	-120
+ 507 01ad 88        		.byte	-120
+ 508 01ae 70        		.byte	112
+ 509 01af 01        		.byte	1
+ 510 01b0 8A        		.byte	-118
+ 511 01b1 88        		.byte	-120
+ 512 01b2 88        		.byte	-120
+ 513 01b3 88        		.byte	-120
+GAS LISTING /tmp/ccdCrIyi.s 			page 10
+
+
+ 514 01b4 88        		.byte	-120
+ 515 01b5 50        		.byte	80
+ 516 01b6 20        		.byte	32
+ 517 01b7 01        		.byte	1
+ 518 01b8 8A        		.byte	-118
+ 519 01b9 88        		.byte	-120
+ 520 01ba 88        		.byte	-120
+ 521 01bb A8        		.byte	-88
+ 522 01bc A8        		.byte	-88
+ 523 01bd A8        		.byte	-88
+ 524 01be 50        		.byte	80
+ 525 01bf 01        		.byte	1
+ 526 01c0 8A        		.byte	-118
+ 527 01c1 88        		.byte	-120
+ 528 01c2 50        		.byte	80
+ 529 01c3 20        		.byte	32
+ 530 01c4 50        		.byte	80
+ 531 01c5 88        		.byte	-120
+ 532 01c6 88        		.byte	-120
+ 533 01c7 01        		.byte	1
+ 534 01c8 8A        		.byte	-118
+ 535 01c9 88        		.byte	-120
+ 536 01ca 88        		.byte	-120
+ 537 01cb 50        		.byte	80
+ 538 01cc 20        		.byte	32
+ 539 01cd 20        		.byte	32
+ 540 01ce 20        		.byte	32
+ 541 01cf 01        		.byte	1
+ 542 01d0 FA        		.byte	-6
+ 543 01d1 08        		.byte	8
+ 544 01d2 10        		.byte	16
+ 545 01d3 20        		.byte	32
+ 546 01d4 40        		.byte	64
+ 547 01d5 80        		.byte	-128
+ 548 01d6 F8        		.byte	-8
+ 549 01d7 01        		.byte	1
+ 550 01d8 72        		.byte	114
+ 551 01d9 40        		.byte	64
+ 552 01da 40        		.byte	64
+ 553 01db 40        		.byte	64
+ 554 01dc 40        		.byte	64
+ 555 01dd 40        		.byte	64
+ 556 01de 70        		.byte	112
+ 557 01df 01        		.byte	1
+ 558 01e0 02        		.byte	2
+ 559 01e1 80        		.byte	-128
+ 560 01e2 40        		.byte	64
+ 561 01e3 20        		.byte	32
+ 562 01e4 10        		.byte	16
+ 563 01e5 08        		.byte	8
+ 564 01e6 00        		.byte	0
+ 565 01e7 01        		.byte	1
+ 566 01e8 72        		.byte	114
+ 567 01e9 10        		.byte	16
+ 568 01ea 10        		.byte	16
+ 569 01eb 10        		.byte	16
+ 570 01ec 10        		.byte	16
+GAS LISTING /tmp/ccdCrIyi.s 			page 11
+
+
+ 571 01ed 10        		.byte	16
+ 572 01ee 70        		.byte	112
+ 573 01ef 01        		.byte	1
+ 574 01f0 22        		.byte	34
+ 575 01f1 50        		.byte	80
+ 576 01f2 88        		.byte	-120
+ 577 01f3 00        		.byte	0
+ 578 01f4 00        		.byte	0
+ 579 01f5 00        		.byte	0
+ 580 01f6 00        		.byte	0
+ 581 01f7 01        		.byte	1
+ 582 01f8 02        		.byte	2
+ 583 01f9 00        		.byte	0
+ 584 01fa 00        		.byte	0
+ 585 01fb 00        		.byte	0
+ 586 01fc 00        		.byte	0
+ 587 01fd 00        		.byte	0
+ 588 01fe F8        		.byte	-8
+ 589 01ff 01        		.byte	1
+ 590 0200 42        		.byte	66
+ 591 0201 20        		.byte	32
+ 592 0202 10        		.byte	16
+ 593 0203 00        		.byte	0
+ 594 0204 00        		.byte	0
+ 595 0205 00        		.byte	0
+ 596 0206 00        		.byte	0
+ 597 0207 01        		.byte	1
+ 598 0208 02        		.byte	2
+ 599 0209 00        		.byte	0
+ 600 020a 70        		.byte	112
+ 601 020b 08        		.byte	8
+ 602 020c 78        		.byte	120
+ 603 020d 88        		.byte	-120
+ 604 020e 78        		.byte	120
+ 605 020f 01        		.byte	1
+ 606 0210 82        		.byte	-126
+ 607 0211 80        		.byte	-128
+ 608 0212 B0        		.byte	-80
+ 609 0213 C8        		.byte	-56
+ 610 0214 88        		.byte	-120
+ 611 0215 88        		.byte	-120
+ 612 0216 F0        		.byte	-16
+ 613 0217 01        		.byte	1
+ 614 0218 02        		.byte	2
+ 615 0219 00        		.byte	0
+ 616 021a 70        		.byte	112
+ 617 021b 80        		.byte	-128
+ 618 021c 80        		.byte	-128
+ 619 021d 88        		.byte	-120
+ 620 021e 70        		.byte	112
+ 621 021f 01        		.byte	1
+ 622 0220 0A        		.byte	10
+ 623 0221 08        		.byte	8
+ 624 0222 68        		.byte	104
+ 625 0223 98        		.byte	-104
+ 626 0224 88        		.byte	-120
+ 627 0225 88        		.byte	-120
+GAS LISTING /tmp/ccdCrIyi.s 			page 12
+
+
+ 628 0226 78        		.byte	120
+ 629 0227 01        		.byte	1
+ 630 0228 02        		.byte	2
+ 631 0229 00        		.byte	0
+ 632 022a 70        		.byte	112
+ 633 022b 88        		.byte	-120
+ 634 022c F8        		.byte	-8
+ 635 022d 80        		.byte	-128
+ 636 022e 70        		.byte	112
+ 637 022f 01        		.byte	1
+ 638 0230 32        		.byte	50
+ 639 0231 48        		.byte	72
+ 640 0232 40        		.byte	64
+ 641 0233 E0        		.byte	-32
+ 642 0234 40        		.byte	64
+ 643 0235 40        		.byte	64
+ 644 0236 40        		.byte	64
+ 645 0237 01        		.byte	1
+ 646 0238 02        		.byte	2
+ 647 0239 78        		.byte	120
+ 648 023a 88        		.byte	-120
+ 649 023b 88        		.byte	-120
+ 650 023c 78        		.byte	120
+ 651 023d 08        		.byte	8
+ 652 023e 70        		.byte	112
+ 653 023f 01        		.byte	1
+ 654 0240 82        		.byte	-126
+ 655 0241 80        		.byte	-128
+ 656 0242 B0        		.byte	-80
+ 657 0243 C8        		.byte	-56
+ 658 0244 88        		.byte	-120
+ 659 0245 88        		.byte	-120
+ 660 0246 88        		.byte	-120
+ 661 0247 01        		.byte	1
+ 662 0248 22        		.byte	34
+ 663 0249 00        		.byte	0
+ 664 024a 60        		.byte	96
+ 665 024b 20        		.byte	32
+ 666 024c 20        		.byte	32
+ 667 024d 20        		.byte	32
+ 668 024e 70        		.byte	112
+ 669 024f 01        		.byte	1
+ 670 0250 12        		.byte	18
+ 671 0251 00        		.byte	0
+ 672 0252 30        		.byte	48
+ 673 0253 10        		.byte	16
+ 674 0254 10        		.byte	16
+ 675 0255 90        		.byte	-112
+ 676 0256 60        		.byte	96
+ 677 0257 01        		.byte	1
+ 678 0258 82        		.byte	-126
+ 679 0259 80        		.byte	-128
+ 680 025a 90        		.byte	-112
+ 681 025b A0        		.byte	-96
+ 682 025c C0        		.byte	-64
+ 683 025d A0        		.byte	-96
+ 684 025e 90        		.byte	-112
+GAS LISTING /tmp/ccdCrIyi.s 			page 13
+
+
+ 685 025f 01        		.byte	1
+ 686 0260 62        		.byte	98
+ 687 0261 20        		.byte	32
+ 688 0262 20        		.byte	32
+ 689 0263 20        		.byte	32
+ 690 0264 20        		.byte	32
+ 691 0265 20        		.byte	32
+ 692 0266 70        		.byte	112
+ 693 0267 01        		.byte	1
+ 694 0268 02        		.byte	2
+ 695 0269 00        		.byte	0
+ 696 026a D0        		.byte	-48
+ 697 026b A8        		.byte	-88
+ 698 026c A8        		.byte	-88
+ 699 026d A8        		.byte	-88
+ 700 026e A8        		.byte	-88
+ 701 026f 01        		.byte	1
+ 702 0270 02        		.byte	2
+ 703 0271 00        		.byte	0
+ 704 0272 B0        		.byte	-80
+ 705 0273 C8        		.byte	-56
+ 706 0274 88        		.byte	-120
+ 707 0275 88        		.byte	-120
+ 708 0276 88        		.byte	-120
+ 709 0277 01        		.byte	1
+ 710 0278 02        		.byte	2
+ 711 0279 00        		.byte	0
+ 712 027a 70        		.byte	112
+ 713 027b 88        		.byte	-120
+ 714 027c 88        		.byte	-120
+ 715 027d 88        		.byte	-120
+ 716 027e 70        		.byte	112
+ 717 027f 01        		.byte	1
+ 718 0280 02        		.byte	2
+ 719 0281 00        		.byte	0
+ 720 0282 F0        		.byte	-16
+ 721 0283 88        		.byte	-120
+ 722 0284 F0        		.byte	-16
+ 723 0285 80        		.byte	-128
+ 724 0286 80        		.byte	-128
+ 725 0287 01        		.byte	1
+ 726 0288 02        		.byte	2
+ 727 0289 00        		.byte	0
+ 728 028a 68        		.byte	104
+ 729 028b 98        		.byte	-104
+ 730 028c 78        		.byte	120
+ 731 028d 08        		.byte	8
+ 732 028e 08        		.byte	8
+ 733 028f 01        		.byte	1
+ 734 0290 02        		.byte	2
+ 735 0291 00        		.byte	0
+ 736 0292 B0        		.byte	-80
+ 737 0293 C8        		.byte	-56
+ 738 0294 80        		.byte	-128
+ 739 0295 80        		.byte	-128
+ 740 0296 80        		.byte	-128
+ 741 0297 01        		.byte	1
+GAS LISTING /tmp/ccdCrIyi.s 			page 14
+
+
+ 742 0298 02        		.byte	2
+ 743 0299 00        		.byte	0
+ 744 029a 70        		.byte	112
+ 745 029b 80        		.byte	-128
+ 746 029c 70        		.byte	112
+ 747 029d 08        		.byte	8
+ 748 029e F0        		.byte	-16
+ 749 029f 01        		.byte	1
+ 750 02a0 42        		.byte	66
+ 751 02a1 40        		.byte	64
+ 752 02a2 E0        		.byte	-32
+ 753 02a3 40        		.byte	64
+ 754 02a4 40        		.byte	64
+ 755 02a5 48        		.byte	72
+ 756 02a6 30        		.byte	48
+ 757 02a7 01        		.byte	1
+ 758 02a8 02        		.byte	2
+ 759 02a9 00        		.byte	0
+ 760 02aa 88        		.byte	-120
+ 761 02ab 88        		.byte	-120
+ 762 02ac 88        		.byte	-120
+ 763 02ad 98        		.byte	-104
+ 764 02ae 68        		.byte	104
+ 765 02af 01        		.byte	1
+ 766 02b0 02        		.byte	2
+ 767 02b1 00        		.byte	0
+ 768 02b2 88        		.byte	-120
+ 769 02b3 88        		.byte	-120
+ 770 02b4 88        		.byte	-120
+ 771 02b5 50        		.byte	80
+ 772 02b6 20        		.byte	32
+ 773 02b7 01        		.byte	1
+ 774 02b8 02        		.byte	2
+ 775 02b9 00        		.byte	0
+ 776 02ba 88        		.byte	-120
+ 777 02bb 88        		.byte	-120
+ 778 02bc A8        		.byte	-88
+ 779 02bd A8        		.byte	-88
+ 780 02be 50        		.byte	80
+ 781 02bf 01        		.byte	1
+ 782 02c0 02        		.byte	2
+ 783 02c1 00        		.byte	0
+ 784 02c2 88        		.byte	-120
+ 785 02c3 50        		.byte	80
+ 786 02c4 20        		.byte	32
+ 787 02c5 50        		.byte	80
+ 788 02c6 88        		.byte	-120
+ 789 02c7 01        		.byte	1
+ 790 02c8 02        		.byte	2
+ 791 02c9 00        		.byte	0
+ 792 02ca 88        		.byte	-120
+ 793 02cb 88        		.byte	-120
+ 794 02cc 78        		.byte	120
+ 795 02cd 08        		.byte	8
+ 796 02ce 70        		.byte	112
+ 797 02cf 01        		.byte	1
+ 798 02d0 02        		.byte	2
+GAS LISTING /tmp/ccdCrIyi.s 			page 15
+
+
+ 799 02d1 00        		.byte	0
+ 800 02d2 F8        		.byte	-8
+ 801 02d3 10        		.byte	16
+ 802 02d4 20        		.byte	32
+ 803 02d5 40        		.byte	64
+ 804 02d6 F8        		.byte	-8
+ 805 02d7 01        		.byte	1
+ 806 02d8 12        		.byte	18
+ 807 02d9 20        		.byte	32
+ 808 02da 20        		.byte	32
+ 809 02db 40        		.byte	64
+ 810 02dc 20        		.byte	32
+ 811 02dd 20        		.byte	32
+ 812 02de 10        		.byte	16
+ 813 02df 01        		.byte	1
+ 814 02e0 22        		.byte	34
+ 815 02e1 20        		.byte	32
+ 816 02e2 20        		.byte	32
+ 817 02e3 20        		.byte	32
+ 818 02e4 20        		.byte	32
+ 819 02e5 20        		.byte	32
+ 820 02e6 20        		.byte	32
+ 821 02e7 01        		.byte	1
+ 822 02e8 42        		.byte	66
+ 823 02e9 20        		.byte	32
+ 824 02ea 20        		.byte	32
+ 825 02eb 10        		.byte	16
+ 826 02ec 20        		.byte	32
+ 827 02ed 20        		.byte	32
+ 828 02ee 40        		.byte	64
+ 829 02ef 01        		.byte	1
+ 830 02f0 02        		.byte	2
+ 831 02f1 00        		.byte	0
+ 832 02f2 68        		.byte	104
+ 833 02f3 90        		.byte	-112
+ 834 02f4 00        		.byte	0
+ 835 02f5 00        		.byte	0
+ 836 02f6 00        		.byte	0
+ 837 02f7 01        		.byte	1
+ 838 02f8 02        		.byte	2
+ 839 02f9 00        		.byte	0
+ 840 02fa 00        		.byte	0
+ 841 02fb 00        		.byte	0
+ 842 02fc 00        		.byte	0
+ 843 02fd 00        		.byte	0
+ 844 02fe 00        		.byte	0
+ 845 02ff 01        		.byte	1
+ 846               		.stabs	"ascii:G(0,16)=ar(0,17)=r(0,17);0;0177777;;0;95;(0,18)=ar(0,17);0;7;(0,19)=k(0,11)",32,0,8,
+ 847               		.text
+ 848               		.stabs	"",100,0,0,.Letext0
+ 849               	.Letext0:
+ 850               		.ident	"GCC: (GNU) 4.7.2"
+GAS LISTING /tmp/ccdCrIyi.s 			page 16
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 ascii.c
+     /tmp/ccdCrIyi.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccdCrIyi.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccdCrIyi.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccdCrIyi.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccdCrIyi.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccdCrIyi.s:77     .progmem.data:0000000000000000 ascii
+
+NO UNDEFINED SYMBOLS
